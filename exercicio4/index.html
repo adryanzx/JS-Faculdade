@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Xhopii</title>
+</head>
+<body>
+  
+    <section class="logo">
+        <img src="logo.png"  alt="image" height="52" width="52">
+        <h1>Xhopii</h1>
+    </section>
+    <nav class="menu-horizontal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Cadastro.html">Cadastro Online</a></li>
+            <li><a href="Funcionario.html">Cadastro Funcionario</a></li>
+            <li><a href="Produto.html">Cadastro Produto</a></li>
+            <li><a href="Clientes.html">Ver Clientes</a></li>
+            <li><a href="vFuncionario.html">Ver Funcionario</a></li>
+            <li><a href="vProdutos.html">Ver Produtos</a></li>
+           
+        </ul>
+    </nav>
+
+
+    <section class="home">
+        <div class="home-img">
+            <img src="dunk.png" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h2>CALÇADOS</h2>
+            <h3>R$76,90</h3>
+            <p>175 Peças disponiveis <br><br> Modelos:</p>
+            <br>
+            <button>Nike SB</button><button>Nike Dunk SB</button><button>Nike TN</button><button>Nike Air Max 97</button><button>Nike Air Max 270</button>
+            <br><br>
+            <p>Tamanhos:</p>
+            <br>
+            <button>39-40</button>  <button>38-37</button><button>37-36</button><button>36-35</button>
+            <br><br>
+            <p>Tamanho Selecionado: 39-40</p> 
+            <br><br>
+            <a href="#" class="btn">Comprar Agora</a>
+            
+        </div><!--home-text-->
+    </section><!--home-->
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="dunk.png" onclick="slider('dunk.png')"></li>
+        </div><!--row-->
+        <div class="row">
+            <li><img src="270.jpg" onclick="slider('270.jpg')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="max.jpg" onclick="slider('max.jpg')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="sb.jpg" onclick="slider('sb.jpg')"></li>
+        </div><!--row3-->
+        <div class="row3">
+            <li><img src="tn.jpg" onclick="slider('tn.jpg')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+
+
+
+
+
+     
+  
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    
+</body>
+</html>
